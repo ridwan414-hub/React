@@ -1,0 +1,8 @@
+.usersStyle{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 2px;
+}
+nav a.active {
+    text-decoration: underline;
+}
