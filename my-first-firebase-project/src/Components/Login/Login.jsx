@@ -1,16 +1,13 @@
 import {
   GithubAuthProvider,
   GoogleAuthProvider,
-  getAuth,
   signInWithPopup,
   signOut,
 } from 'firebase/auth';
-import app from '../../../public/_firebase_init';
 import { useState } from 'react';
+import auth from '../../../public/_firebase_init';
 
 const Login = () => {
-  const auth = getAuth(app);
-
   const [user, setUser] = useState(null);
   // const [gitUser,setGitUser] = useState(null);
 
